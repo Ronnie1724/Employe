@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Enter details</h1>
+<form  method="post">
+<table>
+<tr>
+<th>Name:</th>
+ <th><input type="text" placeholder="enter your name" name="name"></th>
+ </tr>
+ <tr>
+ <th>Employee id:</th>
+<th><input type="number" placeholder="enter your employe id" name="empid"></th>
+</tr>
+<tr>
+<th>Mobile no:</th>
+<th><input type="tel" Placeholder="enter your number" name="number" pattern="{0-9}[10]"></th>
+</tr>
+    <tr>                                         
+    <td> <button type="reset">Cancel</button></td>
+   <td> <button formaction="Save">Save</button>
+    </td>
+</tr>
+</table>
+</form>
+<h1>Search by Employee Id</h1>
+<form  method="post">
+<table>
+ <tr>
+ <th>Employee id:</th>
+<th><input type="number" placeholder="enter your employe id" name="id"></th>
+</tr>
+    <tr>                                         
+    <td> <button type="reset">Cancel</button></td>
+   <td> <button formaction="Search">Search</button>
+    </td>
+</tr>
+</table>
+</form>
+<h1>Search by name</h1>
+<form  method="post">
+<table>
+ <tr>
+ <th>Name:</th>
+<th><input type="text" placeholder="enter your Name" name="Name"></th>
+</tr>
+    <tr>                                         
+    <td> <button type="reset">Cancel</button></td>
+   <td> <button formaction="Searchh">Search</button>
+    </td>
+</tr>
+</table>
+</form>
+<h1>Fetchall</h1>
+<form action="Fetchall" method="post">
+<button>Fetch all</button>
+</form>
+</body>
+</html>
